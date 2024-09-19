@@ -1,0 +1,94 @@
+body{
+    background-color: blue;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    
+    
+}
+
+h1{
+    color:coral;
+    text-align: center;
+}
+/* USO DE IDs */
+#parrafo-especial{
+    font-size: 1.5em;
+    color: coral;
+    text-align: center;
+}
+/*USO DE CLASES  */
+.parrafo{
+    font-style: italic;
+    color:coral;
+    text-align:center;
+}
+
+a, img{
+    display: block;
+}
+
+a{
+    margin: 50px;
+    text-align: center;
+    color: coral;
+    text-decoration: none;
+}
+a:hover{
+    color: aliceblue;
+}
+img{
+    margin: auto;
+}
+input{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+#resultado{
+    color: coral;
+    text-align: center;
+    font-size: 2em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: coral;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    color: black;
+    display: inline-block;
+
+}
+.proyecto h3{
+    color: coral;
+    font-size: large;
+    margin: 20px;
+}
+
+.proyecto p{
+    color: coral;
+    font-style: italic;
+}
+
+.proyecto a{
+    color: rgb(80, 255, 138);
+    font-style: oblique;
+    text-align: left;
+
+}
