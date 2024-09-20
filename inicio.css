@@ -1,0 +1,42 @@
+html, body {
+    height: 100%; /* Asegura que ocupen toda la altura de la ventana */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+
+body{
+    background-image: url('medicina-conexiones-neuronales-en-el-cerebro.jpg');
+    background-size: cover; /* Esto hace que la imagen cubra toda la página */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+}
+
+
+h1 {
+    font-size: 3em;
+    color:rgb(252, 252, 252);
+    position: absolute;
+    left: 0; /* Alinea el h1 al borde izquierdo del eje X */
+    top: 50%; /* Posiciona el h1 en el centro vertical */
+    transform: translateY(-50%); /* Ajusta la posición para centrar el h1 verticalmente */
+    margin-left: 20px; /* Opcional: Añade espacio a la izquierda si es necesario */
+/* Contenedor para el h1 */
+}
+
+nav{
+    font-size: 2em;
+    color: rgb(250, 250, 250);
+    text-decoration: none; 
+    display: inline-block;
+    position: absolute;
+    left: 0; /* Alinea el h1 al borde izquierdo del eje X */
+    top: 70%; /* Posiciona el h1 en el centro vertical */
+    transform: translateY(-50%); /* Ajusta la posición para centrar el h1 verticalmente */
+    margin-left: 550px;
+
+
+}
