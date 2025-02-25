@@ -1,42 +1,57 @@
 html, body {
-    height: 100%; /* Asegura que ocupen toda la altura de la ventana */
+    height: 100%; 
     margin: 0;
     padding: 0;
     position: relative;
 }
 
 
-
 body{
-    background-image: url('medicina-conexiones-neuronales-en-el-cerebro.jpg');
-    background-size: cover; /* Esto hace que la imagen cubra toda la página */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-
+    background-image: url('pompoko.png');
+    background-size: cover; 
 }
-
 
 h1 {
     font-size: 3em;
-    color:rgb(252, 252, 252);
+    color: rgb(252, 252, 252);
     position: absolute;
-    left: 0; /* Alinea el h1 al borde izquierdo del eje X */
-    top: 50%; /* Posiciona el h1 en el centro vertical */
-    transform: translateY(-50%); /* Ajusta la posición para centrar el h1 verticalmente */
-    margin-left: 20px; /* Opcional: Añade espacio a la izquierda si es necesario */
-/* Contenedor para el h1 */
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 50px; 
 }
 
-nav{
+h2 {
     font-size: 2em;
-    color: rgb(250, 250, 250);
-    text-decoration: none; 
-    display: inline-block;
+    color: rgb(252, 252, 252);
     position: absolute;
-    left: 0; /* Alinea el h1 al borde izquierdo del eje X */
-    top: 70%; /* Posiciona el h1 en el centro vertical */
-    transform: translateY(-50%); /* Ajusta la posición para centrar el h1 verticalmente */
-    margin-left: 550px;
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 150px;
+    max-width: 350px;
+}
+
+h3 {
+    font-size: 2em;
+    color: rgb(252, 252, 252);
+    position: absolute;
+    left: 70%;
+    top: 80%;
+    margin-left: 15px;
+}
+
+nav {
+    position: absolute;
+    left: 34%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+}
 
 
+.nav-button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
 }
