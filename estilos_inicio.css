@@ -39,19 +39,26 @@ h3 {
     margin-left: 15px;
 }
 
-nav {
+
+
+.boton-incorrecto {
     position: absolute;
     left: 34%;
     top: 43%;
-    transform: translate(-50%, -50%);
-}
-
-
-.nav-button {
-    position: absolute;
     width: 25px;
     height: 25px;
-    border: none;
     cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.boton-correcto {    
+    position: absolute;
+    left: 55%;
+    top: 69%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
     background: transparent;
 }

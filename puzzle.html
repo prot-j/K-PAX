@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-        DONT KNOW
-    </title>
+    <title>DONT KNOW</title>
+    <link rel="stylesheet" href="puzzle.css">
 </head>
-
 <body>
-    <h1>
-        page in progress...
-    </h1>
+    <div class = "top">
+        <h1>page in progress...</h1>
+        <h2>
+            To make sure that you are not a robot trying to steal my information, 
+            I have prepared a simple task that you will easily pass.
+        </h2>
+        <p>
+            What color is Santiago's white horse?
+        </p>
+    </div>
 
+    <div class="contenedor-principal">
+        <img src="caballo.jpg" class="imagen-caballo">
+        <div class="contenedor-botones">
+            <button class="boton-color rojo" onclick="elegir(this)"></button>
+            <button class="boton-color verde" onclick="elegir(this)"></button>
+            <button class="boton-color azul" onclick="elegir(this)"></button>
+            <button class="boton-color amarillo" onclick="elegir(this)"></button>
+            <button class="boton-color morado" onclick="elegir(this)"></button>
+            <button class="boton-color naranja" onclick="elegir(this)"></button>
+            <button class="boton-color rosa" onclick="elegir(this)"></button>
+            <button class="boton-color marron" onclick="elegir(this)"></button>
+            <button class="boton-color gris" onclick="elegir(this)"></button>
+        </div>
+        <button class="boton-color blanco" onclick="elegir(this)"></button>
+    </div>
+    <button class="boton-respuesta" onclick="aceptar()">Submit Answer</button>
 
+    <script>
+        let eleccion = null;
+
+        function elegir(button) {
+            if (button.classList.contains('elegido')) {
+                button.classList.remove('elegido');
+                eleccion = null;
+            } else {
+                const buttons = document.querySelectorAll('.boton-color');
+                buttons.forEach(btn => btn.classList.remove('elegido'));
+
+                button.classList.add('elegido');
+                eleccion = button.className.split(' ')[1];
+            }
+        }
+
+        function aceptar() {
+            if (eleccion === "blanco") {
+                window.location.href = 'prueba.html';
+            } else {
+                alert("are you daltonic???");
+            }
+        }
+    </script>
 </body>
+</html>

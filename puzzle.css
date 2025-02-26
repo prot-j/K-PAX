@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.top {
+    background-color:aquamarine;
+    padding: 25px;
+
+
+}
+h1 {
+    color: orange;
+}
+
+h2 {
+    padding: 50px;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+
+}
+
+.imagen-caballo {
+    width: 480px; 
+    height: 480px;
+    margin-right: 15px;
+}
+.contenedor-botones {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.boton-color {
+    border: none;
+    border-radius: 5px;
+}
+
+.boton-color.elegido {
+    border: 5px solid #000; 
+}
+
+.rojo { background-color: red; cursor: pointer;}
+.verde { background-color: green; cursor: pointer;}
+.azul { background-color: blue; cursor: pointer;}
+.amarillo { background-color: yellow; cursor: pointer;}
+.morado { background-color: purple; cursor: pointer;}
+.naranja { background-color: orange; cursor: pointer;}
+.rosa { background-color: pink; cursor: pointer;}
+.marron { background-color: brown; cursor: pointer;}
+.gris { background-color: gray; cursor: pointer;}
+
+
+.blanco {
+    background-color: white;
+    margin-left: 15px; 
+    width: 480px;
+    height: 480px;
+}
+
+.boton-respuesta {
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: aquamarine;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.boton-respuesta:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
